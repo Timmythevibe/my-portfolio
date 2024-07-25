@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('#') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #fff;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    z-index: 998;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar .logo a{
+    font-weight: 500px;
+    font-size: 35px;
+    color: #4070f4;
+}
+
+nav.sticky .navbar .logo a{
+    color: #fff;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: #4070f4;
+    border-radius: 4px;
+}
+
+.nav-links {
+    display: flex;
+    size: 10px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.nav-links a:hover {
+    background-color: #4070f4;
+    border-radius: 4px;
+}
+
+.github-icon {
+    font-size: 1.5em;  /* Adjust size */
+}
+
+.github-icon img {
+    position:relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+  }
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 20px;
+    background: #1f6b94;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 25px;
+    font-family: fantasy;
+    line-height: 1.6;
+}
+
+.content {
+    padding: 20px;
+}
+
+.tech-head h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    color: #000000;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-stack-item {
+  margin: 20px 0;
+  width: calc(100% / 4 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+.tech-stack-item:hover {
+    background-color: gray;
+    color: #fff;
+   
+}
+
+.tech-stack-item img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tech-stack-item h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.tech-stack-item p {
+    font-size: 16px;
+    color: #000000;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(7, 2, 2);
+    margin: 2px 0;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+/* Responsive CSS */
+  @media (max-width: 768px) {
+.nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+}
+
+.nav-links a {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+}
+
+.hamburger {
+      display: flex;
+}
+
+.tech-stack-item {
+    width: calc(50% - 20px);
+}
+}
+
+@media (max-width: 480px) {
+    .tech-stack-item {
+      margin: 20px 0;
+      width: 100%;
+      padding: 10px;
+    }
+}
