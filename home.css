@@ -26,7 +26,7 @@
 
 nav{
   position: fixed;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   padding: 20px 0;
   z-index: 998;
@@ -88,7 +88,7 @@ nav.sticky .media-icons a{
 }
 
 /* Side Navigation Menu Button CSS */
-.hamburger {
+/* .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
@@ -99,21 +99,21 @@ nav.sticky .media-icons a{
   height: 5px;
   background-color: rgb(7, 2, 2);
   margin: 2px 0;
-}
+} */
 
 /* home section styling */
 .home{
   height: 100vh;
   width: 100%;
-  background: url("#") no-repeat;
+  background: url("./assets/homecontent.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
 }
 .home .home-content{
-  width: 90%;
-  height: 100%;
+  width: 79%;
+  height: 120%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@ nav.sticky .media-icons a{
 }
 .home .text-two{
   color: #0E2431;
-  font-size: 75px;
+  font-size: 50px;
   font-weight: 600;
   margin-left: -3px;
 }
@@ -299,6 +299,13 @@ section .button button:hover{
   font-size: 60px;
   color: #4070f4;
 }
+
+.vibe{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+}
 /* My Services CSS */
 .services .boxes{
   display: flex;
@@ -382,11 +389,7 @@ section .button button:hover{
   transition: all 0.4s ease;
 }
 
-.vibe {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
+
 
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{

@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: url('#') no-repeat center center fixed;
     background-size: cover;
-    background-color: #fff;
+    background-color: #eeeeee;
     color: white;
 }
 
@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #fff;
+    background-color: #eeeeee;
     padding: 20px 0;
     z-index: 998;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -79,11 +79,14 @@ nav.sticky .navbar .logo a{
     justify-content: flex-start;
     height: 100vh;
     padding: 20px;
-    background: #1f6b94;
+    background-image: url(./assets/teckstackbck.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content {
     max-width: 600px;
+    color: #000000;
 }
 
 .hero-content h1 {
@@ -95,8 +98,8 @@ nav.sticky .navbar .logo a{
 
 .hero-content p {
     font-size: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    line-height: 1.6;
+    font-family: 'Ubuntu';
+    line-height: 1;
 }
 
 .content {
