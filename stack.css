@@ -1,10 +1,10 @@
-body {
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
     margin: 0;
     padding: 0;
-    background: url('#') no-repeat center center fixed;
-    background-size: cover;
-    background-color: #eeeeee;
-    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .navbar {
@@ -14,8 +14,9 @@ body {
     width: 100%;
     background-color: #eeeeee;
     padding: 20px 0;
-    z-index: 998;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar .logo a{
@@ -31,13 +32,9 @@ nav.sticky .navbar .logo a{
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    padding-left: 60px;
 }
 
-.navbar a:hover {
-    background-color: #4070f4;
-    border-radius: 4px;
-}
 
 .nav-links {
     display: flex;
@@ -53,7 +50,6 @@ nav.sticky .navbar .logo a{
 
 .nav-links a:hover {
     background-color: #4070f4;
-    border-radius: 4px;
 }
 
 .github-icon {
@@ -61,17 +57,16 @@ nav.sticky .navbar .logo a{
 }
 
 .github-icon img {
-    position:relative;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 10%;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 18px;
     color: #fff;
-    margin: 0 auto 10px auto;
     transition: all 0.4s ease;
-  }
+}
 
 .hero-section {
     display: flex;
@@ -79,7 +74,7 @@ nav.sticky .navbar .logo a{
     justify-content: flex-start;
     height: 100vh;
     padding: 20px;
-    background-image: url(./assets/teckstackbck.jpg);
+    background-image: url(./stackassets/teckstackbck.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -177,19 +172,24 @@ nav.sticky .navbar .logo a{
 /* Responsive CSS */
   @media (max-width: 768px) {
 .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
 }
 
 .nav-links a {
-      padding: 10px;
-      text-align: center;
-      width: 100%;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.github-icon{
+    display: none;
 }
 
 .hamburger {
-      display: flex;
+    display: flex;
+    padding-right: 10px;
 }
 
 .tech-stack-item {
@@ -200,7 +200,7 @@ nav.sticky .navbar .logo a{
 @media (max-width: 480px) {
     .tech-stack-item {
       margin: 20px 0;
-      width: 100%;
+      width: 75%;
       padding: 10px;
     }
 }
